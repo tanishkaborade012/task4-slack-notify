@@ -13,5 +13,5 @@ jobs:
       - name: Send Slack Message
         run: |
           curl -X POST -H "Content-type: application/json" \
-          --data "{\"text\":\"GitHub workflow triggered successfully 🚀\"}" \
+          --data "{\"text\":\"GitHub workflow triggered successfully \"}" \
           ${{ secrets.SLACK_WEBHOOK_URL }}
